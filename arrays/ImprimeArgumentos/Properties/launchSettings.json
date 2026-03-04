@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImprimeArgumentos": {
+      "commandName": "Project",
+      "commandLineArgs": "Teste1\r\nTeste2\r\nTeste3"
+    }
+  }
+}
