@@ -42,13 +42,14 @@
             this.btnDepositar = new System.Windows.Forms.Button();
             this.txtValorOperacao = new System.Windows.Forms.TextBox();
             this.txtCashback = new System.Windows.Forms.Label();
+            this.lbContas = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(12, 9);
+            this.lblNome.Location = new System.Drawing.Point(175, 9);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(55, 20);
             this.lblNome.TabIndex = 0;
@@ -58,7 +59,7 @@
             // 
             this.lblSaldoAtual.AutoSize = true;
             this.lblSaldoAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaldoAtual.Location = new System.Drawing.Point(12, 35);
+            this.lblSaldoAtual.Location = new System.Drawing.Point(175, 33);
             this.lblSaldoAtual.Name = "lblSaldoAtual";
             this.lblSaldoAtual.Size = new System.Drawing.Size(95, 20);
             this.lblSaldoAtual.TabIndex = 1;
@@ -68,7 +69,7 @@
             // 
             this.lblLimite.AutoSize = true;
             this.lblLimite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLimite.Location = new System.Drawing.Point(12, 59);
+            this.lblLimite.Location = new System.Drawing.Point(175, 59);
             this.lblLimite.Name = "lblLimite";
             this.lblLimite.Size = new System.Drawing.Size(55, 20);
             this.lblLimite.TabIndex = 2;
@@ -78,7 +79,7 @@
             // 
             this.lblValorOperacao.AutoSize = true;
             this.lblValorOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorOperacao.Location = new System.Drawing.Point(12, 148);
+            this.lblValorOperacao.Location = new System.Drawing.Point(175, 233);
             this.lblValorOperacao.Name = "lblValorOperacao";
             this.lblValorOperacao.Size = new System.Drawing.Size(146, 20);
             this.lblValorOperacao.TabIndex = 3;
@@ -86,21 +87,21 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(115, 9);
+            this.txtNome.Location = new System.Drawing.Point(278, 9);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(216, 20);
             this.txtNome.TabIndex = 4;
             // 
             // txtSaldoAtual
             // 
-            this.txtSaldoAtual.Location = new System.Drawing.Point(115, 35);
+            this.txtSaldoAtual.Location = new System.Drawing.Point(278, 35);
             this.txtSaldoAtual.Name = "txtSaldoAtual";
             this.txtSaldoAtual.Size = new System.Drawing.Size(216, 20);
             this.txtSaldoAtual.TabIndex = 5;
             // 
             // txtLimite
             // 
-            this.txtLimite.Location = new System.Drawing.Point(115, 61);
+            this.txtLimite.Location = new System.Drawing.Point(278, 61);
             this.txtLimite.Name = "txtLimite";
             this.txtLimite.Size = new System.Drawing.Size(216, 20);
             this.txtLimite.TabIndex = 6;
@@ -108,9 +109,9 @@
             // btnCriarConta
             // 
             this.btnCriarConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCriarConta.Location = new System.Drawing.Point(16, 98);
+            this.btnCriarConta.Location = new System.Drawing.Point(178, 96);
             this.btnCriarConta.Name = "btnCriarConta";
-            this.btnCriarConta.Size = new System.Drawing.Size(315, 36);
+            this.btnCriarConta.Size = new System.Drawing.Size(314, 32);
             this.btnCriarConta.TabIndex = 8;
             this.btnCriarConta.Text = "Criar Conta";
             this.btnCriarConta.UseVisualStyleBackColor = true;
@@ -119,7 +120,7 @@
             // btnSacar
             // 
             this.btnSacar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSacar.Location = new System.Drawing.Point(128, 187);
+            this.btnSacar.Location = new System.Drawing.Point(291, 266);
             this.btnSacar.Name = "btnSacar";
             this.btnSacar.Size = new System.Drawing.Size(91, 29);
             this.btnSacar.TabIndex = 9;
@@ -130,7 +131,7 @@
             // btnConsultar
             // 
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Location = new System.Drawing.Point(239, 187);
+            this.btnConsultar.Location = new System.Drawing.Point(402, 266);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(91, 29);
             this.btnConsultar.TabIndex = 10;
@@ -142,7 +143,7 @@
             // btnDepositar
             // 
             this.btnDepositar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepositar.Location = new System.Drawing.Point(15, 187);
+            this.btnDepositar.Location = new System.Drawing.Point(178, 266);
             this.btnDepositar.Name = "btnDepositar";
             this.btnDepositar.Size = new System.Drawing.Size(92, 29);
             this.btnDepositar.TabIndex = 11;
@@ -152,7 +153,7 @@
             // 
             // txtValorOperacao
             // 
-            this.txtValorOperacao.Location = new System.Drawing.Point(164, 150);
+            this.txtValorOperacao.Location = new System.Drawing.Point(327, 235);
             this.txtValorOperacao.Name = "txtValorOperacao";
             this.txtValorOperacao.Size = new System.Drawing.Size(166, 20);
             this.txtValorOperacao.TabIndex = 12;
@@ -161,17 +162,27 @@
             // 
             this.txtCashback.AutoSize = true;
             this.txtCashback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCashback.Location = new System.Drawing.Point(11, 239);
+            this.txtCashback.Location = new System.Drawing.Point(175, 204);
             this.txtCashback.Name = "txtCashback";
             this.txtCashback.Size = new System.Drawing.Size(84, 20);
             this.txtCashback.TabIndex = 13;
             this.txtCashback.Text = "Cashback:";
             // 
+            // lbContas
+            // 
+            this.lbContas.FormattingEnabled = true;
+            this.lbContas.Location = new System.Drawing.Point(12, 12);
+            this.lbContas.Name = "lbContas";
+            this.lbContas.Size = new System.Drawing.Size(148, 251);
+            this.lbContas.TabIndex = 14;
+            this.lbContas.SelectedIndexChanged += new System.EventHandler(this.lbContas_SelectedIndexChanged);
+            // 
             // w_ContaCorrente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 281);
+            this.ClientSize = new System.Drawing.Size(511, 308);
+            this.Controls.Add(this.lbContas);
             this.Controls.Add(this.txtCashback);
             this.Controls.Add(this.txtValorOperacao);
             this.Controls.Add(this.btnDepositar);
@@ -209,6 +220,7 @@
         private System.Windows.Forms.Button btnDepositar;
         private System.Windows.Forms.TextBox txtValorOperacao;
         private System.Windows.Forms.Label txtCashback;
+        private System.Windows.Forms.ListBox lbContas;
     }
 }
 

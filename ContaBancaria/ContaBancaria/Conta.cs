@@ -23,14 +23,16 @@ namespace ContaBancaria
 
         public void Depositar(double valor)
         {
-            this.Saldo += valor;
-            SaldoCashBack += (valor / 100) * 5;
+            double valorCashback = (valor / 100) * 5;
+            this.SaldoCashBack += valorCashback;
+            this.Saldo += valor + valorCashback;
         }
 
         public void Sacar(double valor)
         {
-            this.Saldo -= valor;
-            SaldoCashBack++;
+            double valorCashback = 1;
+            this.SaldoCashBack += valorCashback;
+            this.Saldo -= valor - valorCashback;
         }
 
         public double Consultar()

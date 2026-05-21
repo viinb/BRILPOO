@@ -12,7 +12,9 @@ namespace ContaBancaria
 {
     public partial class w_ContaCorrente: Form
     {
+        List<Conta> contas = new List<Conta>();
         Conta conta;
+
         public w_ContaCorrente()
         {
             InitializeComponent();
@@ -27,13 +29,15 @@ namespace ContaBancaria
             else
             {
                 conta = new Conta(txtNome.Text, double.Parse(txtSaldoAtual.Text), double.Parse(txtLimite.Text));
+                contas.Add(conta);
 
-                txtNome.ReadOnly = true;
-                txtSaldoAtual.ReadOnly = true;
-                txtLimite.ReadOnly = true;
-                btnCriarConta.Enabled = false;
+                //txtNome.ReadOnly = true;
+                //txtSaldoAtual.ReadOnly = true;
+                //txtLimite.ReadOnly = true;
 
                 MessageBox.Show("Conta criada com sucesso!");
+
+                lbContas.Items.Add(contas.Count);
             }
         }
 
@@ -74,6 +78,28 @@ namespace ContaBancaria
         private void w_ContaCorrente_Load(object sender, EventArgs e)
         {
             txtCashback.Text = "";
+        }
+
+        private void lbContas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            conta = contas[lbContas.SelectedIndex];
+            TrocarConta();
+        }
+
+        private void TrocarConta()
+        {
+            txtNome.Text = conta.Nome;
+            txtSaldoAtual.Text = conta.Saldo.ToString();
+            txtLimite.Text = conta.Limite.ToString();
+
+            if (conta.SaldoCashBack == 0)
+            {
+                txtCashback.Text = "";
+            }
+            else
+            {
+                txtCashback.Text = "Cashback: " + conta.SaldoCashBack.ToString();
+            }
         }
     }
 }
