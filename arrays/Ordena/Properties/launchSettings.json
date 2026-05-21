@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Ordena": {
-      "commandName": "Project",
-      "commandLineArgs": "Teste3\r\nTeste1\r\nTeste2"
-    }
-  }
-}
