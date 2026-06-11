@@ -16,9 +16,10 @@ namespace Encapsulamento
         public void AtualizarListBox()
         {
             lb_Lista.Items.Clear();
+
             foreach (Livro livro in livros)
             {
-                this.lb_Lista.Items.Add(livro.GetTitulo());
+                this.lb_Lista.Items.Add(livro.Titulo);
             }
         }
 

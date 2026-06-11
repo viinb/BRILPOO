@@ -19,12 +19,12 @@ namespace Encapsulamento
 
         private void w_Detalhe_Load(object sender, EventArgs e)
         {
-            this.tb_Titulo.Text = this.livro.GetTitulo();
+            this.tb_Titulo.Text = this.livro.Titulo;
         }
 
         private void btn_OK_Click(object sender, EventArgs e)
         {
-            this.livro.SetTitulo(tb_Titulo.Text);
+            this.livro.Titulo = tb_Titulo.Text;
             this.Close();
         }
     }
