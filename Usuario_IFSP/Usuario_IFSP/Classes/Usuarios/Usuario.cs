@@ -6,7 +6,7 @@ namespace Usuario_IFSP.Usuarios
     {
         static int id = 0;
 
-        public string Prontuario { get; } = "BI_";
+        public string Prontuario { get; } = "BI";
         public string Tipo { get; } = "Usuário";
 
         int GeraID()
