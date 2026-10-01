@@ -1,10 +1,4 @@
-﻿using _20261001;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System;
 
 namespace Aula_20261001
 {
@@ -12,9 +6,36 @@ namespace Aula_20261001
     {
         static void Main(string[] args)
         {
-            IFSP U = new IFSP();
-            U.Gravar("");
-            Console.WriteLine(U.ToString());
+            int A = 0;
+            string CampoTela;
+            bool Valido = false;
+
+            do
+            {
+                Console.Clear();
+                Console.Write("Digite um número: ");
+                CampoTela = Console.ReadLine();
+
+                try
+                {
+                    A = Int32.Parse(CampoTela);
+                    Valido = true;
+                }
+                catch (Exception E)
+                {
+                    Console.WriteLine("Erro: " + E.Message);
+                    Console.ReadKey(true);
+                    Valido = false;
+                }
+                finally
+                {
+                    if (Valido == true)
+                    {
+                        Console.WriteLine(A);
+                        Console.ReadKey(true);
+                    }
+                }
+            } while (Valido == false);
         }
     }
 }
