@@ -9,7 +9,7 @@ namespace JUNTANDO_TUDO_v2
     interface IContrato
     {
         int NumContrato { get; set; }
-        int DescContrato { get; set; }
+        string DescContrato { get; set; }
         string ImprimeContrato();
     }
 }

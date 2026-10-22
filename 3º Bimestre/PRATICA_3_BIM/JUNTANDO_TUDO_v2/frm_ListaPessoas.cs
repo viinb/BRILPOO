@@ -115,7 +115,7 @@ namespace JUNTANDO_TUDO_v2
             }
             else
             {
-                U = ListaUsuario[PosVetor];
+                U = ListaUsuario[PosVetor % ListaParceiro.Count];
                 switch (U.Classe)
                 {
                     case "TAE":

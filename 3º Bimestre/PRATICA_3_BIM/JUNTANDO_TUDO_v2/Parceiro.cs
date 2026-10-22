@@ -28,7 +28,7 @@ namespace JUNTANDO_TUDO_v2
         }
         public string Nome { get; set; }
         public int NumContrato { get; set; }
-        public int DescContrato { get; set; }
+        public string DescContrato { get; set; }
         public string CPF_CNPJ { get; set; }
 
         public Parceiro(string Codigo, string Nome, string CPF_CNPJ, int NumContrato, string DescContrato)
